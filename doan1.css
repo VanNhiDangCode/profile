@@ -1,0 +1,12 @@
+.img{
+    width: 80%;
+    height: 400px;
+    margin-top: 30px;
+    border-radius: 20px;
+}
+a{
+    color: inherit;
+}
+h3{
+    color: rgba(255, 255, 255, 0.5);
+}
