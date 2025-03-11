@@ -32,7 +32,7 @@
             font-family: 'Inter', sans-serif;
             letter-spacing: -.025em;
             max-width: 100%;
-
+overflow-x: hidden;
         }
         .left {
             width: 50%;
@@ -45,9 +45,10 @@
         }
         .right {
             width: 50%;
+            max-width: 100%;
             margin-left: 50%;
             padding-top: 5%;
-            height: 100vh;
+            /* height: 100vh; */
             
            
         }
@@ -74,8 +75,9 @@ h2 {
 } */
 .fullprojectss{
      color: rgba(255, 255, 255, 0.5);
+     padding: 15px 0px;
 }
-nav{
+.nav-me{
 padding-top: 70px;
 
 }
@@ -113,12 +115,21 @@ padding-top: 70px;
 .experiences:hover{
     background-color: rgba(54, 226, 200, 0.05); /* Màu hover nhạt hơn */
     border-radius: 8px;
+    width: 750px;
  
+}
+.img--pro:hover{
+    background-color: rgba(54, 226, 200, 0.05); /* Màu hover nhạt hơn */
+    border-radius: 8px;
+    width: 90%;
+   
 }
 
 .time{
-    width: 120px;
+    width: 150px;
+   
 }
+
 .time p{
     color: rgba(255, 255, 255, 0.5);
 }
@@ -160,7 +171,7 @@ padding-top: 70px;
     transform: scale(1.05); /* Hiệu ứng phóng to nhẹ */
 }
 .img-avt{
-    width: 150px;
+    width: 180px;
     height: 100px;
     border-radius: 8px;
 }
@@ -172,18 +183,22 @@ a{
     }
     .icon{
         font-size: 35px;
-        position: absolute;
+        /* position: absolute; */
         bottom: 10%;
+        padding-top: 30px;
        
     }
     .img--pro {
     display: flex;
     flex-direction: row; /* Mặc định trên máy tính */
     gap: 20px; /* Khoảng cách giữa ảnh và nội dung */
-    padding-top: 20px;
+    padding: 20px;
+      align-items: center;
+    gap: 10px;
+    p
 }
     .icon a{
-      margin-bottom: autos;
+      margin-bottom: auto;
        padding-right: 20px;
     }
         @media (max-width: 768px) {
@@ -206,6 +221,9 @@ a{
             }
             .nav-item{
                 display: none;
+            }
+            .nav-me{
+                padding-top: 0px;
             }
             h1{
     color: rgba(255, 255, 255, 0.8);
@@ -249,7 +267,7 @@ h2{
         padding: 20px 0;
     }
     .icon{
-       padding-bottom: 15%;
+       /* padding-bottom: 15%; */
     }
     .icon a{
         font-size: 28px;
@@ -276,6 +294,9 @@ h2{
         height: 110px;
         border-radius: 5px;
     }
+    .img--pro{
+        padding: 0px;
+    }
         }
     </style>
 </head>
@@ -286,7 +307,7 @@ h2{
             <h2>Nhibuonqua1@gmail.com</h2>
             <h2>Frontend Engineer</H2>
             <h2 id="style" >I build accessible, pixel-perfect digital experiences for the web</h2>
-<nav>
+<nav class="nav-me" >
     <div class="nav-item about "><span></span>ABOUT</div>
     <div class="nav-item navexperiences "><span></span>EXPERIENCE</div>
     <div class="nav-item projects"><span></span>PROJECTS</div>
@@ -311,6 +332,11 @@ h2{
             Currently, I have experience working with front-end technologies and possess basic knowledge of PHP and MySQL. I have participated in web development projects, handling both UI design and data management system implementation.
             
             In my free time, I enjoy exploring new technologies, reading books, playing games, or working on personal projects to enhance my programming skills</p>
+            <H2>Skills</H2>
+            <p>Frontend: HTML, CSS,SCSS JavaScript,ReactJS</p>
+            <p> Backend: PHP (Laravel)</p>
+                 <p>Database: MySQL, SQL Server</p>
+            <p></p>
             <div class="experiences" >
          <div class="time" >
             <p style="color: aliceblue; padding-bottom: 30px;" class="hidden-about"  >EXPERIENCE</p>
@@ -347,43 +373,47 @@ h2{
                  </div>
         <div class="fullprojectss" ><h3  >View Full Projects</h3></div>
                  
+        <a href="doan2.html">
+            <div   class="img--pro" >
+             
+                <div class="time" >
+                 
+                 <img class="img-avt" src="img/avt2.jpg" alt="">
+                </div>
+                <div class="time-work" >
+                    <h3>Online Clothing Store System</h3>
+                    <p>The online clothing store system is built using technologies such as HTML, CSS, JavaScript, and PHP.  
+                    It provides essential features such as advanced product filtering, flash sales for discounted items,  
+                    and a robust admin panel for managing products, orders, and customer accounts efficiently.  
+                    
+                    Additionally, the system supports secure payment integration, user-friendly navigation, and a responsive  
+                    design to ensure a seamless shopping experience across different devices. </p>
+                    
+            
+               
+               </div>
+                 
+            </div>
+           </a>
                  <a href="doan1.html">
                   <div class="img--pro" >
                     
-                      <div class="time" >
+                      <div class="time" style="padding-bottom: 30px;" >
                        
                        <img class="img-avt" src="img/avt.jpg" alt="">
                       </div>
                       <div class="time-work" >
-                       <h3>Hệ Thống Bán Điện Thoại</h3>
-                       <P>Hệ thông bán điện thoại online sử dụng những công cụ như html,css,JavaScript,php, Chức năng 
-                        phổ biển như tìm lọc sản phẩm săn sale những thiết bị giảm giá
-                       </P>
-                  
-                     
+                        <h3>Online Mobile Store System</h3>
+<p>The online mobile store system is developed using technologies such as HTML, CSS, JavaScript, and PHP.  
+It offers essential features like advanced product filtering, flash sales for discounted devices,  
+and a seamless shopping experience for users.  
+and an admin panel for managing products, orders, and promotions efficiently.</p>
                      </div>
                         
                   </div>
                  </a>
                  
-                 <a href="doan2.html">
-                  <div class="img--pro" >
-                   
-                      <div class="time" >
-                       
-                       <img class="img-avt" src="img/avt2.jpg" alt="">
-                      </div>
-                      <div class="time-work" >
-                       <h3>Hệ Thống Bán Quần Áo Online</h3>
-                       <P>Hệ thông bán điện thoại online sử dụng những công cụ như html,css,JavaScript,php, Chức năng 
-                        phổ biển như tìm lọc sản phẩm săn sale những sản phẩm giảm giá,chức năng quản lí của admin quản lí chặc trẽ đến website
-                       </P>
-                  
-                     
-                     </div>
-                       
-                  </div>
-                 </a>
+               
           
      </div>
    
