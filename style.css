@@ -26,23 +26,21 @@ body{
     border-radius: 50%;
     pointer-events: none;
     transform: translate(-50%, -50%);
-    /* transition: all 0.05s linear; */
+   
 }
 .body_left {
-    position: fixed;
-    left: 0;
-    top: 0;
    
     padding: 80px 200px;
-    overflow-y: auto;
+    max-height: 100vh;
+   
 }
 
 .body_right {
-    margin-left: 50%; /* Đẩy nội dung sang phải để tránh đè lên */
+   
     padding: 80px;
-    overflow-y: auto;
+   
   max-height: 250vh;
-    scrollbar-width: none;
+    
 }
 
 
