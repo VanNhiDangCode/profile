@@ -18,16 +18,7 @@ body{
     overflow: hidden; 
     width: 100%;
 }
-.glow {
-    position: absolute;
-    width: 650px;
-    height: 650px;
-    background: radial-gradient(circle, rgba(255, 255, 255, 0.05) 0%, rgba(255, 255, 255, 0) 90%);
-    border-radius: 50%;
-    pointer-events: none;
-    transform: translate(-50%, -50%);
-   
-}
+
 .body_left {
    
     padding: 80px 200px;

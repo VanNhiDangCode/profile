@@ -1,12 +1,116 @@
-.img{
-    width: 80%;
-    height: 400px;
-    margin-top: 30px;
-    border-radius: 20px;
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
 }
-a{
-    color: inherit;
+
+/* Container chính */
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    min-height: 100vh;
 }
-h3{
-    color: rgba(255, 255, 255, 0.5);
+
+/* Phần trái */
+.body_left {
+    flex: 1;
+    padding: 20px;
+    background: #2c3e50;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.body_left h1 {
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+.body_left h2 {
+    font-size: 18px;
+    font-weight: normal;
+    margin-bottom: 10px;
+}
+
+.nav-item {
+    background: #3498db;
+    padding: 10px 20px;
+    color: white;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 15px;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.nav-item:hover {
+    background: #2980b9;
+}
+P{
+    max-width: 500PX;
+    display: inline-block;
+    font-family: 'Inter', sans-serif;
+    color: rgba(255, 255, 255, 0.7);
+    line-height: 1.5;
+    letter-spacing: 1px;
+}
+/* Phần phải */
+.body_right {
+    flex: 2;
+    padding: 20px;
+    background: linear-gradient(135deg, #0A192F 0%, #112240 100%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.body_right h3 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+/* Thư viện ảnh */
+.image-gallery {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.img {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.img:hover {
+    transform: scale(1.05);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+    
+    .body_left, .body_right {
+        width: 100%;
+        
+        padding: 20px;
+    }
+
+    .image-gallery {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .img {
+        max-width: 90%;
+    }
 }
